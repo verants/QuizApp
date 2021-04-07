@@ -9,21 +9,27 @@
 /* Begin PBXBuildFile section */
 		3B25EE5D261C584700F12F3F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B25EE5C261C584700F12F3F /* AppDelegate.swift */; };
 		3B25EE5F261C584700F12F3F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B25EE5E261C584700F12F3F /* SceneDelegate.swift */; };
-		3B25EE61261C584700F12F3F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B25EE60261C584700F12F3F /* ViewController.swift */; };
+		3B25EE61261C584700F12F3F /* IntroductionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B25EE60261C584700F12F3F /* IntroductionViewController.swift */; };
 		3B25EE64261C584700F12F3F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B25EE62261C584700F12F3F /* Main.storyboard */; };
 		3B25EE66261C584900F12F3F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3B25EE65261C584900F12F3F /* Assets.xcassets */; };
 		3B25EE69261C584900F12F3F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B25EE67261C584900F12F3F /* LaunchScreen.storyboard */; };
+		3B25EE79261C78D400F12F3F /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B25EE78261C78D400F12F3F /* Question.swift */; };
+		3B25EE7D261E30A900F12F3F /* QuestionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B25EE7C261E30A900F12F3F /* QuestionsViewController.swift */; };
+		3B25EE80261E30BF00F12F3F /* ResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B25EE7F261E30BF00F12F3F /* ResultsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		3B25EE59261C584700F12F3F /* SouthParkQuiz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SouthParkQuiz.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B25EE5C261C584700F12F3F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3B25EE5E261C584700F12F3F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		3B25EE60261C584700F12F3F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		3B25EE60261C584700F12F3F /* IntroductionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroductionViewController.swift; sourceTree = "<group>"; };
 		3B25EE63261C584700F12F3F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3B25EE65261C584900F12F3F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3B25EE68261C584900F12F3F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3B25EE6A261C584900F12F3F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3B25EE78261C78D400F12F3F /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
+		3B25EE7C261E30A900F12F3F /* QuestionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionsViewController.swift; sourceTree = "<group>"; };
+		3B25EE7F261E30BF00F12F3F /* ResultsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +62,58 @@
 		3B25EE5B261C584700F12F3F /* SouthParkQuiz */ = {
 			isa = PBXGroup;
 			children = (
-				3B25EE5C261C584700F12F3F /* AppDelegate.swift */,
-				3B25EE5E261C584700F12F3F /* SceneDelegate.swift */,
-				3B25EE60261C584700F12F3F /* ViewController.swift */,
-				3B25EE62261C584700F12F3F /* Main.storyboard */,
-				3B25EE65261C584900F12F3F /* Assets.xcassets */,
-				3B25EE67261C584900F12F3F /* LaunchScreen.storyboard */,
-				3B25EE6A261C584900F12F3F /* Info.plist */,
+				3B25EE73261C587800F12F3F /* Models */,
+				3B25EE71261C586300F12F3F /* Views */,
+				3B25EE72261C586E00F12F3F /* Controllers */,
+				3B25EE76261C5AB100F12F3F /* Resources */,
+				3B25EE75261C5A8600F12F3F /* Supporting */,
 			);
 			path = SouthParkQuiz;
+			sourceTree = "<group>";
+		};
+		3B25EE71261C586300F12F3F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				3B25EE62261C584700F12F3F /* Main.storyboard */,
+				3B25EE67261C584900F12F3F /* LaunchScreen.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		3B25EE72261C586E00F12F3F /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				3B25EE60261C584700F12F3F /* IntroductionViewController.swift */,
+				3B25EE7C261E30A900F12F3F /* QuestionsViewController.swift */,
+				3B25EE7F261E30BF00F12F3F /* ResultsViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		3B25EE73261C587800F12F3F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				3B25EE78261C78D400F12F3F /* Question.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		3B25EE75261C5A8600F12F3F /* Supporting */ = {
+			isa = PBXGroup;
+			children = (
+				3B25EE5C261C584700F12F3F /* AppDelegate.swift */,
+				3B25EE5E261C584700F12F3F /* SceneDelegate.swift */,
+				3B25EE6A261C584900F12F3F /* Info.plist */,
+			);
+			path = Supporting;
+			sourceTree = "<group>";
+		};
+		3B25EE76261C5AB100F12F3F /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				3B25EE65261C584900F12F3F /* Assets.xcassets */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,9 +186,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3B25EE61261C584700F12F3F /* ViewController.swift in Sources */,
+				3B25EE61261C584700F12F3F /* IntroductionViewController.swift in Sources */,
+				3B25EE7D261E30A900F12F3F /* QuestionsViewController.swift in Sources */,
+				3B25EE79261C78D400F12F3F /* Question.swift in Sources */,
 				3B25EE5D261C584700F12F3F /* AppDelegate.swift in Sources */,
 				3B25EE5F261C584700F12F3F /* SceneDelegate.swift in Sources */,
+				3B25EE80261E30BF00F12F3F /* ResultsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -288,7 +340,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = RQ3F7K5P3Y;
-				INFOPLIST_FILE = SouthParkQuiz/Info.plist;
+				INFOPLIST_FILE = SouthParkQuiz/Supporting/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -307,7 +359,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = RQ3F7K5P3Y;
-				INFOPLIST_FILE = SouthParkQuiz/Info.plist;
+				INFOPLIST_FILE = SouthParkQuiz/Supporting/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
